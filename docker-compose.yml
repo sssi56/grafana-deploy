@@ -40,15 +40,15 @@ services:
       - ./grafana/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
       - grafanadata:/var/lib/grafana
 
-  backend:
-    build: ./backend
-    container_name: backend
-    ports:
-      - "8080:8080"
-    logging:
-      driver: json-file
-      options:
-        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+  # backend:
+  #   build: ./backend
+  #   container_name: backend
+  #   ports:
+  #     - "8080:8080"
+  #   logging:
+  #     driver: json-file
+  #     options:
+  #       tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
 
 volumes:
   grafanadata:

@@ -1,5 +1,5 @@
 ## Видео
-https://youtu.be/LyocQr7cN-0
+https://rutube.ru/video/6929cf2036b160df9d5ad63e483a690f/?r=plwd
 
 ## Нагрузочное тестирование с ab:
 
